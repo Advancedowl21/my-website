@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Website</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <meta name="theme-color" content="#0b0f1a" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>my-website</h1>
+    <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Small, fast, and containerized</h2>
+      <p>A minimal static site packaged with Docker and published to GitHub Container Registry.</p>
+      <p class="cta"><a href="#" id="demo-link">Try it locally</a></p>
+    </section>
+
+    <section class="features">
+      <article>
+        <h3>Responsive</h3>
+        <p>Works on phones and desktops out of the box.</p>
+      </article>
+      <article>
+        <h3>Offline-capable</h3>
+        <p>Small service worker caches key assets for offline viewing.</p>
+      </article>
+      <article>
+        <h3>Container-ready</h3>
+        <p>Nginx Dockerfile included; CI builds and publishes the image.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Advancedowl21</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
