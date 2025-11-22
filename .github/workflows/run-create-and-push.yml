@@ -1,0 +1,46 @@
+name: Run create-and-push script
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Ensure script is executable
+        run: |
+          # make sure the script exists
+          if [ ! -f "./create-and-push.sh" ]; then
+            echo "create-and-push.sh not found"
+            exit 1
+          fi
+          chmod +x ./create-and-push.sh
+
+      # Optional: install gh CLI if your script needs it
+      - name: Install GitHub CLI (optional)
+        if: ${{ secrets.GH_PAT != '' }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gh
+
+      # Optional: authenticate gh (only if your script needs gh)
+      - name: Authenticate gh (optional)
+        if: ${{ secrets.GH_PAT != '' }}
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          echo "$GH_PAT" | gh auth login --with-token
+
+      - name: Run the script
+        env:
+          # expose any secrets your script needs here (DO NOT print them)
+          GH_PAT: ${{ secrets.GH_PAT || '' }}
+        run: |
+          ./create-and-push.sh
+        shell: bash
